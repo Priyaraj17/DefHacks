@@ -3,11 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.logo a{
+    color:white;
+}
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: lavender;
+    color:black;
 }
-
+.moti{
+    color:black;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -38,7 +44,7 @@ nav{
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .burger {
@@ -76,6 +82,7 @@ nav{
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index:2 ;
     }
     .nav-links li{
         opacity: 1;
@@ -126,7 +133,8 @@ nav{
 .about{
     min-height: 92vh;
     max-width: 100%;
-    background-color: black;
+    background-image: url('https://images.unsplash.com/photo-1463385676620-a37609440d4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80');
+    background-size: 100% auto;
 }
  .about {
     text-align: center;
@@ -142,7 +150,137 @@ nav{
     position: static;
     display: inline-block;
     margin: 20%;
+    font-size:60px;
+    text-shadow: 4px 4px #ff0000;
 }
 .info{
     margin-top: 5%;;
+}
+.carousel-inner > .carousel-item > img {
+     width:640px; height:380px;
+ }
+
+ 
+.-fx-image-gal {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	justify-content: center;
+}
+.-fx-gal-item {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+
+.-fx-gal-image-thumb img {
+	width: 100%;
+	cursor: pointer;
+	transform: scale(1.4);
+	transition: all 0.5s ease;
+}
+
+.q{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.-fx-gal-image-thumb:hover img {
+	cursor: pointer;
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	filter: grayscale(0%);
+	transform: scale(1.5);
+	transition: all 0.5s ease;
+}
+@media (min-width: 420px) {
+	.-fx-image-gal {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.-fx-gal-item {
+		width: 50%;
+	}
+}
+@media (min-width: 768px) {
+	.-fx-gal-item {
+		width: 33.33%;
+	}
+}
+
+.accordion {
+    /*background-color: #9d9198;*/
+    background:rgba(0,0,205 ,0.7);
+    color: white;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size:15px;
+    font-weight:bold;
+    margin-bottom:10px;
+    border-radius:15px;
+}
+.accordion:hover{
+   background:mediumblue;
+}
+.try{
+   background:#5d4954;
+    color: white;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:10px;
+    border-radius:15px;
+}
+p{
+   margin-left:10px;
+   font-size: 20px;
+   line-height:25px;
+}
+a.dropdown-item{
+    color:black;
+}
+
+
+li{
+   margin-left:90px;
+   font-size: 18px;
+}
+.info{
+    margin-top: 50px;
+    font-size:17px;
+}
+p{
+margin-left:30px;
+}
+.display-5{
+font-size:25px;
+}
+.co{
+font-size:20px;
+font-weight:bold;
+padding: 10px 25px;
+}
+button{
+background:crimson;
+border-radius:5px;
+padding: 15px 32px;
+text-align: center;
+color:white;
+font-size:20px;
+font-weight:bold;
+}
+li{
+margin-left:40px;
 }
